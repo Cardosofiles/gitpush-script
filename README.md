@@ -110,6 +110,7 @@ Você pode personalizar este script para incluir validações, log de histórico
 - Git instalado
 - Terminal WSL (Ubuntu)
 - Projeto já inicializado com Git (`git init`)
+- Configuração com ssh CLI do Github
 
 ---
 
