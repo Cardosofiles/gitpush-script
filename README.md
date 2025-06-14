@@ -149,11 +149,11 @@ $ gitpush
 
 ## 💻 GitHub CLI: Autenticação e Configuração
 
-```bash
-gh auth login                    # 🔑 Login na conta GitHub via terminal
-gh auth status                   # 🔍 Verifica status da autenticação
-gh auth logout                   # 🚪 Faz logout
-```
+| Comando        | Descrição                             |
+| -------------- | ------------------------------------- |
+| gh auth login  | 🔑 Login na conta GitHub via terminal |
+| gh auth status | 🔍 Verifica status da autenticação    |
+| gh auth logout | 🚪 Faz logout                         |
 
 ## 📦 Comandos `gh repo` Repositórios (GitHub CLI)
 
