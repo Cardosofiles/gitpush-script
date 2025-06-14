@@ -124,3 +124,90 @@ $ gitpush
 ...
 ✅ Push realizado com sucesso!
 ```
+
+# 🚀 GitHub CLI – Guia de Comandos e Convenções de Commits
+
+## 🧠 Prefixos de Commits Convencionais
+
+| Prefixo    | Descrição                                                                           |
+| ---------- | ----------------------------------------------------------------------------------- |
+| `feat`     | ✨ Inclusão de novo recurso (relaciona-se com **MINOR** no versionamento semântico) |
+| `fix`      | 🐛 Correção de bugs (relaciona-se com **PATCH** no versionamento semântico)         |
+| `docs`     | 📚 Mudanças na documentação (ex: README)                                            |
+| `test`     | 🧪 Criação ou modificação de testes (sem alterar lógica do código)                  |
+| `build`    | 🛠️ Alterações em arquivos de build ou dependências                                  |
+| `perf`     | ⚡ Melhorias de performance                                                         |
+| `style`    | 🎨 Alterações visuais no código (indentação, espaçamento, etc)                      |
+| `refactor` | 🧹 Refatorações sem alteração de comportamento                                      |
+| `chore`    | 🔧 Tarefas administrativas (ex: configuração, atualizações de pacote)               |
+| `ci`       | 🤖 Mudanças na integração contínua (CI/CD)                                          |
+| `raw`      | 📦 Mudanças em arquivos de configuração ou parâmetros crus                          |
+| `cleanup`  | 🧽 Limpeza de código, comentários ou arquivos obsoletos                             |
+| `remove`   | ❌ Remoção de arquivos ou funcionalidades obsoletas                                 |
+
+---
+
+## 💻 GitHub CLI: Autenticação e Configuração
+
+```bash
+gh auth login                    # 🔑 Login na conta GitHub via terminal
+gh auth status                   # 🔍 Verifica status da autenticação
+gh auth logout                   # 🚪 Faz logout
+```
+
+## 📦 Comandos `gh repo` Repositórios (GitHub CLI)
+
+| Comando                                                                    | Descrição                                         |
+| -------------------------------------------------------------------------- | ------------------------------------------------- |
+| `gh repo create`                                                           | ✨ Cria novo repositório (público ou privado)     |
+| `gh repo clone <user>/<repo>`                                              | 📥 Clona um repositório existente                 |
+| `gh repo fork`                                                             | 🍴 Cria um fork do repositório atual              |
+| `gh repo view`                                                             | 🔍 Visualiza detalhes do repositório              |
+| `gh repo list <user>`                                                      | 📜 Lista todos os repositórios de um usuário      |
+| `gh repo edit --name novo-nome`                                            | ✏️ Renomeia o repositório                         |
+| `gh repo edit --description "..."`                                         | 📝 Altera a descrição do repositório              |
+| `gh repo edit --homepage URL`                                              | 🌐 Define ou altera a homepage associada          |
+| `gh repo edit --visibility public --accept-visibility-change-consequences` | 🌞 Torna o repositório **público**                |
+| `gh repo edit --visibility private`                                        | 🔒 Torna o repositório **privado**                |
+| `gh repo delete`                                                           | 🗑️ Exclui o repositório (confirmação obrigatória) |
+
+## 🌿 Branches e PRs
+
+| Comando               | Descrição                           |
+| --------------------- | ----------------------------------- |
+| `gh pr create`        | 🚀 Cria uma nova Pull Request       |
+| `gh pr list`          | 📋 Lista todas as Pull Requests     |
+| `gh pr view <id>`     | 👀 Visualiza os detalhes de uma PR  |
+| `gh pr checkout <id>` | 🔄 Faz checkout de uma Pull Request |
+| `gh pr merge`         | ✅ Realiza o merge da Pull Request  |
+| `gh pr close`         | ❌ Fecha uma Pull Request           |
+| `gh pr reopen`        | ♻️ Reabre uma Pull Request fechada  |
+
+## 🐞 Issues
+
+| Comando                | Descrição                             |
+| ---------------------- | ------------------------------------- |
+| `gh issue create`      | 🐛 Cria uma nova issue                |
+| `gh issue list`        | 📋 Lista todas as issues abertas      |
+| `gh issue view <id>`   | 🔎 Visualiza os detalhes de uma issue |
+| `gh issue close <id>`  | ✅ Fecha uma issue                    |
+| `gh issue reopen <id>` | ♻️ Reabre uma issue fechada           |
+
+## ⚙️ GitHub Actions e Workflows
+
+| Comando            | Descrição                                         |
+| ------------------ | ------------------------------------------------- |
+| `gh workflow list` | ⚙️ Lista os workflows configurados no repositório |
+| `gh run list`      | 🔁 Mostra as execuções recentes dos workflows     |
+
+## ✨ Exemplo de uso prático
+
+```bash
+gh repo create <name_repo> --public
+gh repo clone Cardosofiles/minha-app
+cd minha-app
+gh issue create --title "Novo recurso" --body "Descrição aqui"
+gh pr create --base main --head feature/api --title "Nova API" --body "Adiciona integração"
+```
+
+### ❤️ Este guia foi criado com 💻 + ☕ por Cardosofiles
