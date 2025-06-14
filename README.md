@@ -108,7 +108,7 @@ Você pode personalizar este script para incluir validações, log de histórico
 ## 📌 Requisitos
 
 - Git instalado
-- Terminal WSL (Ubuntu)
+- Ambiente Linux (Ubuntu, Kali, Arch, etc...)
 - Projeto já inicializado com Git (`git init`)
 - Configuração com ssh CLI do Github
 
